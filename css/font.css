@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+
+.h::before {
+        /* font: var(--fa-font-solid); */
+        font-family:"FontAwesome";
+        content: "\f16d";
+        font-size: 60px;
+}
+
+.h{
+        display: inline-block;
+}
+.bone::before{
+        font-family:"FontAwesome";
+        content: "\f5d7";
+}

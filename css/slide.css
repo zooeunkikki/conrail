@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+.slide{
+    width: 100%;
+    margin: 0 auto;
+
+    /* 고정값 */
+    position: relative;
+    /* 배너, 버튼, 인디게이터 모든 요소들의 최상의 부모 */
+}
+
+.slide .slick-list{
+    /* 배너들의 상위요소 */
+    overflow: hidden;
+}
+
+.slide .slide-track{
+    /* 배너 그룹 및 translateX값으로 이동(스트립트) */
+}
+
+.slide .slide-track::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.slide .slick-slide{
+    /* 개별배너 */
+    margin: 0;
+    /* mobile-height */
+    min-height: 90vh;
+    float: left;
+    background-color: #111111;
+    overflow: hidden;
+}
+
+.slide .slick-slide img{
+    position: absolute;
+    left: 50%; top: 50%;
+    opacity: 0.8;
+    min-height: 100%;
+    min-width:100%;
+    transform: translate(-50%,-50%);
+}
+
+.slide figure {
+    margin: 0;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide figure img {
+    width: 100%;
+}
+
+
+
+.slide .btn {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+}
+/* next & prev */
+.slide .slick-prev{
+    position: absolute;
+    left: 5%; bottom: 3%;
+    border: transparent;
+    width: 25px; height: 25px;
+    text-align: center;
+    font-size: 0;
+    background: url('../svg/caret-left-solid.svg')no-repeat;
+    z-index: 2;
+}
+
+.slick-prev.back{
+    background-color: aliceblue;
+}
+
+.slick-prev.active{
+    position: absolute;
+    left: 5%; bottom: 3%; 
+    background: url('../svg/left_btn.svg') no-repeat;
+    fill: none;
+    stroke: red;
+    stroke-width: 2px;
+    stroke-dashoffset: -18.2212;
+    stroke-dasharray: 145.77px, 36.5425px;
+    opacity: 1;
+    z-index: 2;
+}
+
+
+.slide .slick-next{
+    position: absolute;
+    border: transparent;
+    left: 20%; bottom: 3%; 
+    width: 25px; height: 25px;
+    text-align: center;
+    font-size: 0;
+    background: url('../svg/caret-right-solid.svg')no-repeat;
+    z-index: 2;
+}
+
+
+
+/* dots */
+.slide .slick-dots{
+    position: absolute;
+    right: 10%;
+    bottom: 4%;
+    width: 50%;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+.slide .slick-dots li{display: inline-block;}
+.slide .slick-dots li button{
+    width: 7px;
+    height: 7px;
+    background-color: rgb(255, 255, 255, 0.5);
+    border: transparent;
+    border-radius: 100px;
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 0;
+    padding: 0;
+}
+
+
+.slide .slick-dots li.slick-active button{
+    width:7px;
+    background-color: rgb(255, 255, 255);
+    height: 7px;
+    border: transparent;
+    border-radius: 100px;
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 0;
+    padding: 0;
+}
