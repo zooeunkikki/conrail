@@ -9,6 +9,7 @@ var url = public; /*URL*/
 var queryParams = '?serviceKey='+ servicekey;
 queryParams += '&bgnde=' + ''; /*유기날짜 - 검색시작일 */
 queryParams += '&endde=' + ''; /*유기날짜 - 검색종료일*/
+queryParams += '&upkind=' + '417000'; /*품종코드(개 : 417000, 고양이 : 422400, 기타 : 429900)*/
 queryParams += '&kind=' + ''; /*품종코드*/
 queryParams += '&upr_cd=' + '6110000'; /*시도코드*/
 queryParams += '&org_cd=' + ''; /*시군구코드*/
@@ -24,27 +25,50 @@ queryParams += '&_type=json'; /*json & xml*/
 xhr.open('GET', url + queryParams);
 xhr.onreadystatechange = function () {
     if (this.readyState == 4) {
-        let list = '';
-        let tags = [];
-        let Box = document.querySelector('.find .dog-find ul');
+        let list;
+        let tags;
         let data = this.responseText;  // API
         data = JSON.parse(data)   // API - json으로 바꿔주는 역할
         data = data.response.body.items.item; 
-        // console.log(data)
-
+        console.log(data)
         
+        function dogFind(){
+            list = '';
+            tags = [];
+            let Box = document.querySelector('.find .dog-find ul');
+            data.forEach(function(value){
+                tags.push(`<li>
+                    <p><img src="${value.popfile}"></p>
+                    <div class="li-txt"></div>
+                </li>`);
 
-        data.forEach(function(value){
-            tags.push(`<li>
-                <p><img src="${value.popfile}"></p>
-                <p>${value.specialMark}</p>
-            </li>`);
+                
+            });
+            tags.forEach(function(vlaue){
+                list += vlaue;
+            });
+            Box.innerHTML = list;
+            dogFindTxt();
+        }
+        function dogFindTxt(){
+            list = '';
+            tags = [];
+            let txtBox = document.querySelectorAll('.find .dog-find .li-txt');
 
-        });
-        tags.forEach(function(vlaue){
-            list += vlaue;
-        });
-        Box.innerHTML = list;
+
+            txtBox.forEach(function(value,k){
+                txtBox[k].innerHTML= tags.push(`<div>
+                        <p>${value.age}</p>     
+                        <p>${value.weight}</p>           
+                        <p>${value.specialMark}</p>
+                    </div>`
+                    );
+                    txtBox.innerHTML = tags;
+            });
+                
+        }
+
+    dogFind();
     }
 };
 

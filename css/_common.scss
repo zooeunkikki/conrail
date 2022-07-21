@@ -50,10 +50,12 @@
 
 
 // cushion
+$cushion250 : 250px;
 $cushion200 : 200px;
 $cushion100 : 100px;
 $cushion70 : 70px;
 $cushion50 : 50px;
+$cushion25 : 25px;
 
 $font-defualt: 14px;
 $pageMargin: 0 auto;
@@ -73,10 +75,14 @@ $font-Y5:#FFF3DB;
 $font-foot1: #746454;
 $Brown: #AA6600;
 
+// font-preline
+$pre: pre-line;
+
 * {
     box-sizing: border-box;
     font-size: 1rem;
     line-height: 1.6;
+    color: $font-colorg1;
 }
 
 html,
