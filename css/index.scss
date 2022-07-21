@@ -1,0 +1,153 @@
+@import "_common";
+
+
+main {
+    margin: 10px auto;
+
+    .slide {
+        ul {
+            li {
+                position: relative;
+                width: 100%;
+
+                p {
+                    display: inline-block;
+                    margin: 0;
+                    padding: 0;
+                    background-color: rgba(0, 0, 0, 0.8);
+                    vertical-align: top;
+
+                    img {
+                        width: 100%;
+                        opacity: 0.6;
+                        vertical-align: top;
+                    }
+                }
+
+                .slide-txt {
+                    position: absolute;
+                    left: 40%;
+                    top: 30%;
+                    text-align: center;
+
+                    h2 {
+                        font-family: 'S-CoreDream-5Medium';
+                        font-size: 2rem;
+                        white-space: pre-line;
+                    }
+
+                    a {
+                        font-family: 'S-CoreDream-3Light';
+                        font-size: 1.5rem;
+                        color: $font-colorg3;
+
+                        &::before {
+                            content: '';
+                            display: block;
+                            width: 40%;
+                            margin: 0 auto;
+                            border-top: 1px solid $font-colorg3;
+                            padding-top: 10px;
+                        }
+
+                        &::after {
+                            display: inline-block;
+                            font-family: "FontAwesome";
+                            content: "\f054";
+                            margin: 0;
+                            padding-left: 20px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    .adopt{
+        margin: $cushion200;
+    }
+
+    .find {
+        background-color: $font-Y4;
+        text-align: center;
+
+        .find-txt {
+            h2 {
+                font-family: 'S-CoreDream-6Bold';
+                padding: 0;
+                margin: 0px;
+                color: $font-Y1;
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-family: 'S-CoreDream-4Regular';
+                padding: 0;
+                margin: 0;
+                margin-top: 10px;
+                color: $Brown;
+                font-size: 1.3rem;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 5%;
+                    margin: 0 auto;
+                    border-top: 1px solid $Brown;
+                    padding-top: 10px;
+                }
+            }
+
+            
+            
+        }
+
+
+        .dog-find {
+            ul {
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                // justify-content: space-between;
+                align-items: flex-start;
+                align-content: center;
+
+                li {
+                    width: 20%;
+
+                    p {
+                        width: 100%;
+                        height: 30vh;
+                        /* vw로 사용하세요 브라우저크기라 잘 생각해서! */
+                        display: inline-block;
+                        padding: 0;
+                        margin: 0;
+                        vertical-align: top;
+                        overflow: hidden;
+                        border-radius: 7%;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            vertical-align: top;
+                        }
+                    }
+
+                    .find-txt{
+                        h3{
+                            margin: 0;
+                            padding: 0;
+                            white-space: pre-line;
+                            span{}
+                        }
+
+                        a{}
+                    }
+                }
+            }
+        }
+    }
+}

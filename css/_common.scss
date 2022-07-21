@@ -1,0 +1,288 @@
+@charset "utf-8";
+
+// Web-font
+
+
+// S-CoreDream
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-4Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-5Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-6Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Cafe24Ssurround
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// UhBeeZZIBA-Regular
+@font-face {
+    font-family: 'UhBeeZZIBA-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/UhBeeZZIBA-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+// cushion
+$cushion200 : 200px;
+$cushion100 : 100px;
+$cushion70 : 70px;
+$cushion50 : 50px;
+
+$font-defualt: 14px;
+$pageMargin: 0 auto;
+$pagrWidth: 100%;
+
+// font-color
+$font-colorg1: #444;
+$font-colorg2: #8E8E8E;
+$font-colorg3:#D9D9D9;
+
+$font-Y1:#FC9803;
+$font-Y2:#FFD231;
+$font-Y3:#FFDD85;
+$font-Y4:#FFEAB5;
+$font-Y5:#FFF3DB;
+
+$font-foot1: #746454;
+$Brown: #AA6600;
+
+* {
+    box-sizing: border-box;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+html,
+body {
+    font-size: $font-defualt;
+    margin: $pageMargin;
+    width: $pagrWidth;
+}
+
+ul,
+li,
+ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $font-colorg1;
+
+}
+
+@mixin LogoA($LogoB) {
+    display: inline-block;
+    font-size: 0;
+    width: 200px;
+    height: 30px;
+    background: $LogoB;
+}
+
+@mixin  TXTA(){
+    // display: inline-block;
+    font-size: 1.5rem;
+    font-family: 'S-CoreDream-5Medium';
+    padding: 0 70px;
+}
+
+
+// header
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: $pagrWidth;
+    z-index: 999;
+    
+    
+    .hd{
+        padding: 30px 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $font-Y4;
+
+        h2 {
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+
+            a {
+                @include LogoA(url('../img/logo/bewithme_logo_b.png')0% 0% /cover no-repeat);
+            }
+        }
+
+        nav {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+            .sub-nav {
+                display: flex;
+                ul{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    li{
+                        
+                        $afont : (1, 2, 3,4);
+                        @each $a in $afont {
+                            a:nth-of-type(#{$a}) {
+                                @include TXTA();
+                            }
+                        }
+                        
+                        .sub-burger{
+                            display: none;
+                            margin-top: 40px;
+                            ul{
+                                li{
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+
+                                    $BurgerA:(1,2,3,4);
+                                    @each $aa in $BurgerA{
+                                        a:nth-of-type(#{$aa}){
+                                            margin-top: 30px;
+                                            display: inline-block;
+                                            font-size: 1.5rem;
+                                            font-family: 'S-CoreDream-5Medium';
+                                            color: $font-foot1;
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+
+            
+        }
+
+        .small-nav {
+            $smallA : (1, 2);
+
+            @each $sa in $smallA {
+                a:nth-of-type(#{$sa}) {
+                    font-family: 'S-CoreDream-3Light';
+                }
+
+                a:nth-of-type(2)::before {
+                    content: '';
+                    display: inline-block;
+                    border-left: 1px solid $font-colorg1;
+                    width: 10px;
+                    height: 10px;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+
+        a:hover{
+        color: $font-Y1;
+    }
+}
+
+
+
+// footer
+footer{
+    padding: 30px 50px;
+    background-color: $font-Y3;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    div {
+    }
+
+    .logobox {
+        h2 {
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+
+            a {
+                @include LogoA(url('../img/logo/bewithme_logo_b.png')0% 0% /cover no-repeat);
+            }
+        }
+    }
+
+    .hd-nav {
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                text-align: center;
+                a {@include TXTA();}
+                
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 40px;
+                    
+                    a {
+                        @include TXTA();
+                        color: $font-foot1;
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .copy {
+        width: 100%;
+        p {}
+
+        a {}
+    }
+
+    & a:hover{
+        color:$font-Y1;
+    }
+
+    & ul li div a:hover{
+        color:$font-Y1;
+    }
+}

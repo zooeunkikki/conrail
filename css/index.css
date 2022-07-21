@@ -1,0 +1,354 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream-4Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream-5Medium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream-6Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "UhBeeZZIBA-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/UhBeeZZIBA-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+html,
+body {
+  font-size: 14px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+ul,
+li,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+header .hd {
+  padding: 30px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFEAB5;
+}
+header .hd h2 {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+header .hd h2 a {
+  display: inline-block;
+  font-size: 0;
+  width: 200px;
+  height: 30px;
+  background: url("../img/logo/bewithme_logo_b.png") 0% 0%/cover no-repeat;
+}
+header .hd nav {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .hd nav .sub-nav {
+  display: flex;
+}
+header .hd nav .sub-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .hd nav .sub-nav ul li a:nth-of-type(1) {
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  padding: 0 70px;
+}
+header .hd nav .sub-nav ul li a:nth-of-type(2) {
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  padding: 0 70px;
+}
+header .hd nav .sub-nav ul li a:nth-of-type(3) {
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  padding: 0 70px;
+}
+header .hd nav .sub-nav ul li a:nth-of-type(4) {
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  padding: 0 70px;
+}
+header .hd nav .sub-nav ul li .sub-burger {
+  display: none;
+  margin-top: 40px;
+}
+header .hd nav .sub-nav ul li .sub-burger ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+header .hd nav .sub-nav ul li .sub-burger ul li a:nth-of-type(1) {
+  margin-top: 30px;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  color: #746454;
+}
+header .hd nav .sub-nav ul li .sub-burger ul li a:nth-of-type(2) {
+  margin-top: 30px;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  color: #746454;
+}
+header .hd nav .sub-nav ul li .sub-burger ul li a:nth-of-type(3) {
+  margin-top: 30px;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  color: #746454;
+}
+header .hd nav .sub-nav ul li .sub-burger ul li a:nth-of-type(4) {
+  margin-top: 30px;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  color: #746454;
+}
+header .hd .small-nav a:nth-of-type(1) {
+  font-family: "S-CoreDream-3Light";
+}
+header .hd .small-nav a:nth-of-type(2)::before {
+  content: "";
+  display: inline-block;
+  border-left: 1px solid #444;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+}
+header .hd .small-nav a:nth-of-type(2) {
+  font-family: "S-CoreDream-3Light";
+}
+header .hd .small-nav a:nth-of-type(2)::before {
+  content: "";
+  display: inline-block;
+  border-left: 1px solid #444;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+}
+header a:hover {
+  color: #FC9803;
+}
+
+footer {
+  padding: 30px 50px;
+  background-color: #FFDD85;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .logobox h2 {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+footer .logobox h2 a {
+  display: inline-block;
+  font-size: 0;
+  width: 200px;
+  height: 30px;
+  background: url("../img/logo/bewithme_logo_b.png") 0% 0%/cover no-repeat;
+}
+footer .hd-nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+footer .hd-nav ul li {
+  text-align: center;
+}
+footer .hd-nav ul li a {
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  padding: 0 70px;
+}
+footer .hd-nav ul li div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+footer .hd-nav ul li div a {
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-5Medium";
+  padding: 0 70px;
+  color: #746454;
+  margin: 10px 0;
+}
+footer .copy {
+  width: 100%;
+}
+footer a:hover {
+  color: #FC9803;
+}
+footer ul li div a:hover {
+  color: #FC9803;
+}
+
+main {
+  margin: 10px auto;
+}
+main .slide ul li {
+  position: relative;
+  width: 100%;
+}
+main .slide ul li p {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  vertical-align: top;
+}
+main .slide ul li p img {
+  width: 100%;
+  opacity: 0.6;
+  vertical-align: top;
+}
+main .slide ul li .slide-txt {
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  text-align: center;
+}
+main .slide ul li .slide-txt h2 {
+  font-family: "S-CoreDream-5Medium";
+  font-size: 2rem;
+  white-space: pre-line;
+}
+main .slide ul li .slide-txt a {
+  font-family: "S-CoreDream-3Light";
+  font-size: 1.5rem;
+  color: #D9D9D9;
+}
+main .slide ul li .slide-txt a::before {
+  content: "";
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+  border-top: 1px solid #D9D9D9;
+  padding-top: 10px;
+}
+main .slide ul li .slide-txt a::after {
+  display: inline-block;
+  font-family: "FontAwesome";
+  content: "\f054";
+  margin: 0;
+  padding-left: 20px;
+}
+main .adopt {
+  margin: 200px;
+}
+main .find {
+  background-color: #FFEAB5;
+  text-align: center;
+}
+main .find .find-txt h2 {
+  font-family: "S-CoreDream-6Bold";
+  padding: 0;
+  margin: 0px;
+  color: #FC9803;
+  font-size: 2.5rem;
+}
+main .find .find-txt p {
+  font-family: "S-CoreDream-4Regular";
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  color: #AA6600;
+  font-size: 1.3rem;
+}
+main .find .find-txt p::before {
+  content: "";
+  display: block;
+  width: 5%;
+  margin: 0 auto;
+  border-top: 1px solid #AA6600;
+  padding-top: 10px;
+}
+main .find .dog-find ul {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: center;
+}
+main .find .dog-find ul li {
+  width: 20%;
+}
+main .find .dog-find ul li p {
+  width: 100%;
+  height: 30vh;
+  /* vw로 사용하세요 브라우저크기라 잘 생각해서! */
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+  overflow: hidden;
+  border-radius: 7%;
+}
+main .find .dog-find ul li p img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: top;
+}
+main .find .dog-find ul li .find-txt h3 {
+  margin: 0;
+  padding: 0;
+  white-space: pre-line;
+}/*# sourceMappingURL=index.css.map */
