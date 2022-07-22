@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "S-CoreDream-3Light";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
@@ -239,116 +238,82 @@ footer ul li div a:hover {
 }
 
 main {
-  margin: 10px auto;
+  margin: 0 auto;
+  padding: 0;
 }
-main .slide ul li {
-  position: relative;
+main .main-top {
+  margin: 0 auto;
+  width: 1920px;
+  padding: 0;
+}
+main .main-top img {
   width: 100%;
-}
-main .slide ul li p {
-  display: inline-block;
-  margin: 0;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  vertical-align: top;
-}
-main .slide ul li p img {
-  width: 100%;
-  opacity: 0.6;
-  vertical-align: top;
-}
-main .slide ul li .slide-txt {
-  position: absolute;
-  left: 40%;
-  top: 30%;
-  text-align: center;
-}
-main .slide ul li .slide-txt h2 {
-  font-family: "S-CoreDream-5Medium";
-  font-size: 2rem;
-  white-space: pre-line;
-}
-main .slide ul li .slide-txt a {
-  font-family: "S-CoreDream-3Light";
-  font-size: 1.5rem;
-  color: #D9D9D9;
-}
-main .slide ul li .slide-txt a::before {
-  content: "";
-  display: block;
-  width: 40%;
   margin: 0 auto;
-  border-top: 1px solid #D9D9D9;
-  padding-top: 10px;
 }
-main .slide ul li .slide-txt a::after {
-  display: inline-block;
-  font-family: "FontAwesome";
-  content: "\f054";
-  margin: 0;
-  padding-left: 20px;
+main .top-txt {
+  margin: 0 auto;
+  width: 1000px;
+  margin-top: 50px;
+  margin-bottom: 80px;
 }
-main .adopt {
-  margin: 200px;
+main .top-txt h2 {
+  font-size: 40px;
+  width: 180px;
+  color: rgb(68, 68, 68);
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
-main .find {
-  background-color: #FFEAB5;
-  text-align: center;
+main .top-txt p {
+  font-size: 20px;
+  color: rgb(68, 68, 68);
+  margin: 0 auto;
+  width: 460px;
 }
-main .find .find-txt h2 {
-  font-family: "S-CoreDream-6Bold";
+main .main-button {
+  width: 1000px;
+  margin: 0 auto;
   padding: 0;
-  margin: 0px;
-  color: #FC9803;
-  font-size: 2.5rem;
+  margin-bottom: 100px;
 }
-main .find .find-txt p {
-  font-family: "S-CoreDream-4Regular";
-  padding: 0;
-  margin: 0;
-  margin-top: 10px;
-  color: #AA6600;
-  font-size: 1.3rem;
-}
-main .find .find-txt p::before {
-  content: "";
-  display: block;
-  width: 5%;
-  margin: 0 auto;
-  border-top: 1px solid #AA6600;
-  padding-top: 10px;
-}
-main .find .dog-find ul {
-  width: 80%;
-  margin: 0 auto;
+main .main-button nav ul {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: center;
+  justify-content: space-between;
+  margin: 0 auto;
 }
-main .find .dog-find ul li {
-  width: 20%;
+main .main-button nav ul li {
+  width: 230px;
+  margin: 0 auto;
 }
-main .find .dog-find ul li p {
-  width: 100%;
-  height: 30vh;
-  /* vw로 사용하세요 브라우저크기라 잘 생각해서! */
-  display: inline-block;
+main .main-button nav ul li a {
+  width: 230px;
+  height: 100px;
+}
+main .main-button nav ul li a button {
+  background-color: #FFEAB5;
+  border: none;
+  border-radius: 100px;
+  width: 230px;
+  height: 60px;
+  font-size: 20px;
+}
+main .center {
+  width: 85%;
+  margin: 0 auto;
   padding: 0;
-  margin: 0;
-  vertical-align: top;
-  overflow: hidden;
-  border-radius: 7%;
 }
-main .find .dog-find ul li p img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  vertical-align: top;
+main .center thead {
+  width: 85%;
+  height: 50px;
+  background-color: #FFDD85;
 }
-main .find .dog-find ul li .find-txt h3 {
-  margin: 0;
+main .center thead tr {
+  border-collapse: collapse;
+  th: nth;
+}
+main .center thead tr th {
   padding: 0;
-  white-space: pre-line;
-}/*# sourceMappingURL=index.css.map */
+}
+main tbody tr td {
+  text-align: center;
+}/*# sourceMappingURL=index_01_all.css.map */

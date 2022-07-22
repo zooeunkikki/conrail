@@ -1,0 +1,92 @@
+@import "_common.scss";
+
+main{
+    margin:0 auto;
+    padding:0;
+
+    .main-top{
+        margin:0 auto;
+        width:1920px;
+        padding:0;
+        img{
+            width:100%;
+            padding:0;
+            margin:0 auto;
+        }
+    }
+
+    .top-txt{
+        margin: 0 auto;
+        width:1000px;
+        margin-top:50px;
+        margin-bottom: 80px;
+        h2{
+            font-size:40px;
+            width:180px;
+            color:rgba(68,68,68,1);
+            margin:0 auto;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size:20px;
+            color:rgba(68,68,68,1);
+            margin: 0 auto;
+            width: 460px;
+        }
+    }
+
+    .main-button{
+        width:1000px;
+        margin:0 auto;
+        padding:0;
+        margin-bottom: 100px;
+        nav{
+            ul{
+                display:flex;
+                justify-content: space-between;
+                margin:0 auto;
+                li{
+                    width:230px;
+                    margin:0 auto;
+                    a{
+                        width:230px;
+                        height:100px;
+                        button{
+                            background-color: #FFEAB5;
+                            border:none;
+                            border-radius:100px;
+                            width:230px;
+                            height: 60px;
+                            font-size: 20px;    
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    .center{
+        width:85%;
+        margin:0 auto;
+        padding:0;
+        thead{
+            width:85%;
+            height: 50px;
+            background-color: #FFDD85;
+            tr{
+                border-collapse:collapse;
+                th{
+                    padding: 0;
+                }
+                th
+            }
+        }
+    }
+    tbody{
+        tr{
+            td{
+                text-align: center;
+            }
+        }
+    }
+}
